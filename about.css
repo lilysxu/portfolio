@@ -1,0 +1,702 @@
+
+
+*{
+    margin:0;
+    padding:0;
+  }
+  body{
+      background-color:black;
+      overflow-x:hidden;
+      box-sizing:border-box;
+  }
+  #intro{
+    padding-left:10%;
+    padding-right:10%;
+    margin-top:10%;
+    margin-right:10%;
+    line-height:1.5;
+    font-size:20px;
+    
+  }
+  #lightleak1{
+    height:100%;
+    width:100vw;
+    position:absolute;
+    transform:rotateY(180deg);
+    top:0;
+    
+  }
+  #lightleak2{
+    height:100%;
+    width:auto;
+    position:absolute;
+    z-index:-1;
+   
+    
+  }
+  
+    #cam-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: left;
+      align-items:center;
+     
+    }
+    #cam{
+      transform: rotate(-90deg);
+      z-index:-1;
+      background-color:transparent;
+    }
+    #caption{
+      margin-left:60%;
+      margin-right:5%;
+      line-height:2;
+    }
+    .pics{
+      position:absolute;
+      height:15%;
+      width:6%;
+      object-fit:cover;
+    }
+  
+    .pics:hover{
+      cursor:pointer;
+      filter:brightness(90%);
+      
+    }
+  
+  p{
+    color:white;
+  
+  }
+  
+  .polaroid{
+    width: 25vh;
+    height: 25vw;
+    object-fit: scale-down;
+    position:absolute;
+    background-color:transparent;
+    transition: 0.5s;
+  }
+  #polaroid3{
+   right:60px;
+   top:400px;
+    transform: rotate(-30deg);
+  
+  }
+  #polaroid4{
+    right:300px;
+    top:1100px;
+    transform:rotate(30deg);
+  
+  }
+  .polaroid:hover{
+    cursor:pointer;
+    width: 20%;
+    height: 40%;
+    object-fit: scale-down;
+    opacity:0.9;
+   
+  }
+  
+    .resize1,.resize2,.resize3,.resize4,.resize5,.resize6,.resize7,.resize8,.resize9{
+      height:480px;
+      width:600px;
+      object-fit:contain;
+      z-index: 1;
+     
+    }
+  
+  
+  @media screen and (max-width:2400px){
+    body{
+      background-color:black;
+    }
+   #cam{
+      height:200%;
+      width:200%;
+      margin-top:200px;
+      z-index:-50;
+   }
+  
+   #pic9{
+    margin-top:-820px;
+    margin-left:30px;
+    object-fit:cover;
+   }
+   #pic8{
+    margin-top:-820px;
+    margin-left:230px;
+   }
+   #pic7{
+    margin-top:-820px;
+    margin-left:430px;
+   }
+   #pic6{
+    margin-top:-650px;
+    margin-left:30px;
+   }
+   #pic5{
+    margin-top:-650px;
+    margin-left:230px;
+   }
+   #pic4{
+    margin-top:-650px;
+    margin-left:430px;
+   }
+   #pic3{
+    margin-top:-480px;
+    margin-left:30px;
+   }
+   #maddy{
+    margin-top:-480px;
+    margin-left:230px;
+   }
+   #selfie{
+    margin-top:-480px;
+    margin-left:430px;
+   }
+   .resize1{transform:translate(-200px,-428px);}
+    #caption{
+      text-align: left;
+      color:white;
+      margin-top:-450px;
+      margin-left:63%;
+      padding-bottom:300px;
+     
+      
+  }
+    .dropbtn {
+      background-color: black;
+      color:beige;
+      width:200px;
+      font-size: 16px;
+      border:1px solid beige;
+      cursor: pointer;
+      transition:0.5s;
+      padding:10px;
+      margin-top:150px;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: beige;
+      color:black;
+    }
+    
+    .dropdown {
+      position: absolute;
+      display: inline-block;
+      padding-left:20vw;
+      padding-top:10%;
+      z-index:1;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      width: 200px;
+      overflow: auto;
+      z-index: 1;
+     
+    }
+    
+    .dropdown-content button {
+      color: white;
+      text-decoration: none;
+      display: block;
+      width:200px;
+      border:1px solid beige;
+      background-color:black;
+      transition:0.5s;
+      padding:10px;
+    }
+    
+    .dropdown-content button:hover {
+      background-color: beige; 
+      color:black;
+    }
+  
+    #music-intro{
+      transition:opacity 0.5s;
+      margin-right:10vw;
+      margin-left:30vw;
+      transform:translateY(180px);
+      
+    }
+    #standard{
+      transform:translateY(250px);
+      padding-left:47vw;
+    }
+    .spotify{
+      border-radius:12px;
+      width:40%;
+      height:152;
+    }
+    .show {display: block;}
+   #polaroid3,#polaroid4{
+    z-index:10;
+   }
+   #polaroid3{
+    top:450px;
+   }
+   #polaroid4{
+    top:1200px;
+   }
+  }
+  
+  
+  
+  
+  
+  @media screen and (max-width:1650px){
+   body{
+    background-color:black;
+   }
+   #intro{
+    font-size:18px;
+   }
+  
+    #cam-container {
+      position: relative;
+      width: 500px;
+      height: 500px;
+     
+      
+    }
+    #cam{
+      width:620px;
+      height:905px;
+      transform: rotate(-90deg);
+      z-index:-1;
+      background-color:transparent;
+      margin-top:250px;
+    }
+    .pics{
+      height:75px;
+      width:auto;
+      object-fit:cover;
+      top:-80px;
+      
+    }
+    #pic9{
+      margin-left:-600px;
+      margin-top:300px;
+    }
+    .resize9{transform:translate(-60px,-20px);}
+    #pic8{
+      margin-left:-450px;
+      margin-top:300px;
+    }
+    /* .resize8{transform:translate(-120px,-20px);} */
+    
+    #pic7{
+      margin-left:-300px;
+      margin-top:300px;
+    }
+    .resize7{transform:translate(-450px,-20px);}
+    #pic6{
+      margin-left:-600px;
+      margin-top:420px;
+    }
+    .resize6{
+      transform:translate(210px,-140px);
+    }
+    #pic5{
+      margin-left:-450px;
+      margin-top:420px;
+    }
+    .resize5{
+      transform:translate(-120px,-140px);
+    }
+    #pic4{
+      margin-left:-300px;
+      margin-top:420px;
+    }
+    .resize4{
+      transform:translate(-450px,-140px);
+    }
+    #pic3{
+      margin-left:-600px;
+      margin-top:540px;
+    }
+    .resize3{
+      transform:translate(210px, -260px);
+    }
+    #maddy{
+      margin-left:-450px;
+      margin-top:540px;
+    }
+    .resize2{
+      transform:translate(-120px, -260px);
+    }
+    #selfie{
+      margin-left:-300px;
+      margin-top:540px;
+    }
+    .resize1{
+      transform:translate(-450px, -260px);
+    }
+    .resize1,.resize2,.resize3,.resize4,.resize5,.resize6,.resize7,.resize8,.resize9{
+      height:75%;
+      width:auto;
+      z-index:1;
+    }
+    #caption{
+      margin-top:200px;
+      margin-left:5vw;
+      margin-right:25%;
+      text-align:left;
+      padding-bottom:400px;
+  
+    }
+    .dropbtn {
+      background-color: black;
+      color:beige;
+      width:150px;
+      font-size: 16px;
+      border:1px solid beige;
+      cursor: pointer;
+      transition:0.5s;
+      padding:10px;
+      margin-top:150px;
+    }
+    
+    .dropbtn:hover, .dropbtn:focus {
+      background-color: beige;
+      color:black;
+    }
+    
+    .dropdown {
+      position: absolute;
+      display: inline-block;
+      padding-left:5vw;
+      z-index:1;
+    }
+  
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      width: 150px;
+      overflow: auto;
+      z-index: 1;
+    }
+    
+    .dropdown-content button {
+      color: white;
+      text-decoration: none;
+      display: block;
+      width:150px;
+      border:1px solid beige;
+      background-color:black;
+      transition:0.5s;
+    }
+    
+    .dropdown-content button:hover {
+      background-color: beige; 
+      color:black;
+    }
+  
+    #music-intro{
+      transition:opacity 0.5s;
+      margin-right:5vw;
+     
+      
+    }
+    .show {display: block;}
+  
+    #polaroid4{
+      /* margin-top:1200px;
+      margin-left:300px; */
+      top:700px;
+      left:850px;
+      height:300px;
+      width:200px;
+  
+    }
+    #polaroid3{
+      /* margin-left:600px;
+      margin-top:900px; */
+      top:500px;
+      height:300px;
+      width:200px;
+    }
+    
+  
+    .dropdown,#music-intro{
+      margin-top:-100px;
+    }
+    #standard{
+      margin-top:-200px;
+    }
+    .resize8{
+      transform:translate(-215px,-17px);
+    }
+    .resize7{
+      transform:translate(-360px,-17px);
+    }
+    .resize6{
+      transform:translate(-60px,-137px);
+    }
+    .resize5{
+      transform:translate(-215px,-137px);
+    }
+    .resize4{
+      transform:translate(-360px,-137px);}
+    .resize3{
+      transform:translate(-60px,-257px);
+    }
+    .resize2{
+      transform:translate(-215px,-257px);
+    }
+    .resize1{
+      transform:translate(-360px,-257px);
+    }
+  
+  }
+  
+  @media screen and (max-width:1300px){
+    body{
+      background-color:blue;
+    }
+    #intro{
+      font-size:15px;
+      margin-right:5%;
+      padding-right:5%;
+    }
+    #polaroid3{
+      top:1400px;
+      left:100px;
+    }
+    #polaroid4{
+      left:500px;
+      top:1300px;
+    }
+    .dropdown,#music-intro{
+      margin-top:50px;
+    }
+    #standard{
+      margin-top:50px;
+    }
+  
+  }
+   
+  
+  
+  
+  @media screen and (max-width:750px){
+    body{
+      background-color:black;
+    }
+  #intro{
+    margin-top:10%;
+  }
+  
+    #music-intro{
+      transition:opacity 0.5s;
+      margin-left:40vw;
+      margin-top:10vh;
+    }
+   
+    #polaroid3{
+      width:25%;
+      top:1300px;
+      left:10px;
+    }
+    #polaroid4{
+      width:25%;
+      left:400px;
+      top:1300px;
+  
+    }
+    .polaroid:hover{
+      cursor:pointer;
+      opacity:0.9;
+     
+    }
+    .dropdown{
+      top:900px;
+      padding-bottom:500px;
+  
+    }
+    #music-intro{
+      padding-bottom:-30px;
+    }
+    .spotify{
+      border-radius:12px;
+      width:50%;
+      height:152px;
+    }
+    .dropdown,#music-intro{
+      margin-top:300px;
+    }
+    #standard{
+      margin-top:100px;
+    }
+  
+    
+   #caption{
+    padding-bottom:300px;
+   }
+   #lightleak2{
+    display:none;
+   }
+  
+  }
+  
+  
+  
+  
+  @media (max-width:500px) and (max-height:700px){
+    body{background-color:black;}
+   
+    #intro{
+      margin-top:0;
+      padding:5vw;
+    }
+    #polaroid3{
+      width:25%;
+      top:350px;
+      left:-200px;
+    }
+    #polaroid4{
+      width:25%;
+      left:200px;
+      top:350px;
+  
+    }
+  
+  
+  
+     #cam{
+      width:465px;
+      height:679px;
+      transform:rotate(-90deg);
+      z-index:1;
+      background-color:transparent;
+     }
+     .pics{
+      height:65px;
+      width:auto;
+     }
+     
+     #pic7{
+      margin-top:340px;
+      margin-left:-210px;
+     
+     }
+     .resize7{
+      transform:translate(-245px,-5px);
+     }
+     .resize8{
+      transform:translate(-135px,-5px);
+     }
+     .resize9{
+      transform:translate(-25px,-5px);
+     }
+     .resize6{
+      transform:translate(-25px,-95px);
+     }
+     .resize5{
+      transform:translate(-135px,-95px);
+     }
+     .resize4{
+      transform:translate(-245px,-95px);
+     }
+     .resize3{
+      transform:translate(-25px,-185px);
+     }
+     .resize2{
+      transform:translate(-135px,-185px);
+     }
+     .resize1{
+      transform:translate(-245px,-185px);
+     }
+  
+  
+     #pic8{
+      margin-top:340px;
+      margin-left:-320px;
+     }
+     #pic9{
+      margin-top:340px;
+      margin-left:-430px;
+     }
+     #pic4{
+      margin-top:430px;
+      margin-left:-210px;
+     }
+     #pic5{
+      margin-top:430px;
+      margin-left:-320px;
+     }
+     #pic6{
+      margin-top:430px;
+      margin-left:-430px;
+     }
+    #selfie{
+      margin-top:520px;
+      margin-left:-210px;
+    }
+    #maddy{
+      margin-top:520px;
+      margin-left:-320px;
+    }
+    #pic3{
+      margin-top:520px;
+      margin-left:-430px;
+    }
+     .resize9,.resize8,.resize7,.resize6,.resize5,.resize4,.resize3,.resize2,.resize1{
+      height:250px;
+      z-index:1;
+     
+     }
+     #caption{
+      margin-top:150px;
+      position:relative;
+     }
+     
+      #polaroid3{
+        margin-top:1050px;
+        margin-left:200px;
+      }
+      #polaroid4{
+        margin-top:1200px;
+        margin-left:20px;
+      }
+      #polaroid3,#polaroid4{
+        height:200px;
+        width:200px;
+      
+      }
+      .polaroid:hover{
+        cursor:pointer;
+        opacity:0.9;
+       
+      }
+   
+      .dropdown {
+        position: absolute;
+        display: inline-block;
+        padding-left:5vw;
+        z-index:1;
+       
+        
+      }
+        #music-intro{
+          transition:opacity 0.5s;
+          margin-left:40vw;
+          
+        }
+      .spotify{
+        border-radius:12px;
+        width:50%;
+        height:352px;
+       
+  
+        
+      }
+    
+    
+    }

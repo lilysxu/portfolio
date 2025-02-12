@@ -1,0 +1,295 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: black;
+    overflow-x:hidden;
+}
+#polaroid2{
+    transform:translateX(-800px) translateY(-100px) rotate(-20deg);
+}
+#bow{
+    transform:translateX(-600px) translateY(400px) rotate(-20deg);
+}
+#prev-btn{
+    left:15vw;
+}
+#next-btn{
+    left:65vw;
+}
+
+/* Book */
+.book-container {
+    position:absolute;
+    width: 35%;
+    padding-bottom:50%;
+    top:10%;
+    right:33%;
+    background-color:white;
+   /* 16:9 aspect ratio */
+   /* Optional, for visualization */
+}
+
+
+.book{
+    /* width: 6in;
+    height: 8in; */
+    width:100%;
+    height:100%;
+    position: absolute;
+    transition: transform 0.5s;
+}
+
+.paper{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    perspective: 1500px;
+}
+.front, .back{
+    background-color: white;
+    position:absolute;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    transform-origin: left;
+    transition: transform 0.5s;
+}
+
+.designbook-title{
+    align-items:center;
+    top:100px;
+}
+
+.front{
+    z-index:1 /*the highest number page you get*/;
+    backface-visibility: hidden;
+}
+.back{
+    z-index:0;
+}
+
+.front-content, .back-content{
+    width:100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.back-content{
+    transform:rotateY(180deg);
+}
+.imgs{
+    width: 99%; 
+    height: 99%;
+ 
+    overflow:hidden;
+}
+#horiz{
+    width:100%;
+    height:100%;
+    overflow-y:hidden;
+}
+
+/*flipped effect */
+.flipped .front, .flipped .back{
+    transform: rotateY(-180deg);
+}
+
+/* buttons */
+button{
+    cursor: pointer;
+    position:absolute;
+    margin: 5px;
+    transition: transform 0.5s;
+    transition-duration:0.5s;
+    border: none;
+    background-color:transparent;
+}
+.btn, .button1:hover, .button2:hover{
+    height:150px;
+    width:150px;
+}
+
+/* paper stack order */
+#p1{
+    z-index: 5;
+}
+#p2{
+    z-index: 4;
+}
+#p3{
+    z-index: 3;
+}
+#p4{
+    z-index: 2;
+}
+#p5{
+    z-index: 1;
+}
+.bg-imgs{
+    position:absolute;
+    transition:0.3s;
+}
+
+#polaroid1,#polaroid2{
+    width: 200px;
+    height: 300px;
+    object-fit: scale-down;
+    position:absolute;
+    transition:0.5s;
+    transition-duration:0.5s;
+
+}
+#polaroid1:hover, #polaroid2:hover{
+
+    width: 190px;
+    height: 290px;
+    opacity:0.8;
+       
+    
+   
+}
+
+#bow{
+    width: 300px;
+    height: 400px;
+    object-fit: scale-down;
+    position:absolute;
+    transition:transform 0.5s;
+    transition-duration:0.5s;
+
+}
+
+#home-link{
+    font-size: 50px;
+    position:relative;
+}
+
+#camera1{
+    width: 500px;
+    height: 500px;
+    object-fit: scale-down;
+    transition: transform 0.5s;
+    transition-duration: 0.5s;
+}
+/* Styles for landscape orientation */
+@media only screen and (orientation: landscape) {
+    .landscape-content {
+        display: block;
+    }
+    .portrait-warning {
+        display: none;
+    }
+}
+/* Styles for portrait orientation */
+@media only screen and (orientation: portrait) {
+    .landscape-content {
+        display: none;
+    }
+    .portrait-warning {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+        padding: 20px;
+        color:white;
+    }
+}
+@media screen and (max-width:1500px){
+    #polaroid1{
+        left:500px;
+    }
+   #polaroid2{
+    left:900px;
+    top:300px;
+   }
+}
+@media screen and (max-width:1200px){
+    #prev-btn{
+     
+        top:40vh;
+    }
+    #next-btn{
+        top:40vh;
+        
+    }
+    #polaroid1:hover, #polaroid2:hover{
+        width: 250px;
+        height: 250px;
+        filter:brightness(0.9); 
+    }
+    #polaroid1{
+        left:-500px;
+        top:500px;
+    }
+    #polaroid2{
+        left:1500px;
+        top:1000px;
+    }
+    #camera1{
+        left:20vw;
+        top:30vh;
+        object-fit:scale-down;
+        z-index:-1;
+    }
+}
+@media screen and (max-width:750px){
+    #prev-btn{
+        left:7vw;
+        top:30vh;
+    }
+    #next-btn{
+        left:52vw;
+        height:40vh;
+        width:40vw;
+        object-fit:scale-down;
+        top:20vh;
+        
+    }
+    #bow{
+        left:70vw;
+        top:-90vh;
+    }
+    #polaroid1,#polaroid2{
+        height:200px;
+        width:200px;
+        object-fit:scale-down;
+    }
+    #polaroid1:hover, #polaroid2:hover{
+        width: 190px;
+        height: 190px;
+        filter:brightness(0.9);
+           
+        
+    }
+    #polaroid1{
+        left:-500px;
+        top:160px;
+    }
+    #polaroid2{
+        left:1200px;
+        top:700px;
+    }
+    #camera1{
+        left:-50vw;
+        height:250px;
+        top:60vh;
+        object-fit:scale-down;
+        z-index:-1;
+    }
+   
+
+}
+
+

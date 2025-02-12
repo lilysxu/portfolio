@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" type="text/css" href="about.css">
+        <title>
+            About
+        </title>
+    </head>
+    <body>
+        
+      
+            
+            <img id="lightleak1" src="assets/lightleak2.webp">
+       
+        
+        <h1 style="color:white;padding-left:100px;padding-top:50px;font-size:50px">About</h1>
+        <nav>
+            <a href="home.html"><img class="polaroid" id="polaroid3" src="assets/polaroid3.jpg"></a>
+            <a href="portfolio.html"><img class="polaroid" id="polaroid4" src="assets/polaroid4.jpg"></a>
+        </nav>
+        <p id="intro" >Hey there! My name’s Lily and I’m a rising senior based in the United States. To be honest, when I first started creating this website I viewed technology as simply a means to display art: it only existed in my mind as a tool and could never be art itself. I slowly realized I was looking at everything wrong as my website came to a close, however. In each line of code laid a vision of mine - when I caught myself thinking, 'the timing of this text fade has to be exactly 4.5 seconds' or 'the placement of that button needed margins of 50 pixels or else everything will fail' it felt a whole lot like I was designing another graphic or painting another piece, where every brushstroke was meticulously placed. Technology - websites, games, software - all exists with intent behind it, with the desire to bring emotion and meaning to others' lives, and isn't that precisely what art is too? I'm glad I was able to create this website and get to know technology a little better: so now, it's your turn to get to know me.  </p>
+         <div id="cam-container">
+            
+            <div id="group">
+                <img id="cam" src="assets/digicam2.png">
+            <img class="pics" id="selfie" src="assets/selfie.JPG"  onclick="showText(this.id)">
+            <img class="pics" id="maddy" src="assets/swan.png"onclick="showText(this.id)">
+            <img class="pics" id="pic3" src="assets/roomsketch2.png"onclick="showText(this.id)">
+            <img class="pics" id="pic4" src="assets/landscapes.png"onclick="showText(this.id)">
+            <img class="pics" id="pic5" src="assets/lilypads.png"onclick="showText(this.id)">
+            <img class="pics" id="pic6" src="assets/animalsketch.png"onclick="showText(this.id)">
+            <img class="pics" id="pic7" src="assets/loveandwar.png"onclick="showText(this.id)">
+            <img class="pics" id="pic8" src="assets/jellyfish.png"onclick="showText(this.id)">
+            <img class="pics" id="pic9" src="assets/desk2.png"onclick="showText(this.id)">
+         
+            </div>
+            
+        </div>
+        <p id="caption">Click on each picture in the camera to learn more about some snapshots of my life!</p> 
+         <!-- <img class="pics" id="maddy" src="assets/maddy.JPG"style="transform:translate(-590px, 380px)"onclick="showText(this.id)">
+         <img class="pics" id="pic3" src="assets/pic3.JPG"style="transform:translate(-410px, 380px)"onclick="showText(this.id)">
+         <img class="pics" id="pic4" src="assets/pic4.JPG"style="transform:translate(-770px, 560px)"onclick="showText(this.id)">
+         <img class="pics" id="pic5" src="assets/pic5.JPG"style="transform:translate(-590px, 560px)"onclick="showText(this.id)">
+         <img class="pics" id="pic6" src="assets/pic6.JPG"style="transform:translate(-410px, 560px)"onclick="showText(this.id)">
+         <img class="pics" id="pic7" src="assets/pic7.JPG"style="transform:translate(-770px, 740px)"onclick="showText(this.id)">
+         <img class="pics" id="pic8" src="assets/pic8.JPG"style="transform:translate(-590px, 740px)"onclick="showText(this.id)">
+         <img class="pics" id="pic9" src="assets/pic9.JPG"style="transform:translate(-410px, 740px)"onclick="showText(this.id)">  -->
+        
+        <!-- spotify searchbar -->
+        <!-- <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+            <div id="myDropdown" class="dropdown-content">
+                <button id="c" onClick="makeSound(this.id)">classical</button>
+                <button id="i" onClick="makeSound(this.id)">indie</button>
+            </div>
+          </div> -->
+          
+
+         
+          <div class="dropdown">
+            <p id="music-intro"> Music has always been an integral part of my life. Select a genre below to see what I've been keeping on repeat lately!</p>
+            <button onclick="myFunction()" class="dropbtn">select genre...</button>
+            <div id="myDropdown" class="dropdown-content">
+                <button id="classical" onclick="showSong(this.id)">classical</button>
+                <button id="soul" onclick="showSong(this.id)">soul</button>
+                <button id="r&b" onclick="showSong(this.id)">r&b</button>
+                <button id="bedroom pop" onclick="showSong(this.id)">bedroom pop</button>
+            </div>
+
+          </div>
+          <img id="lightleak2" src="assets/lightleak3.webp" alt="Light Leak">
+          <iframe class="spotify" id="standard" style="border-radius:12px;display:none" src="https://open.spotify.com/embed/track/5pNiAcguRrBdYf5V0QXdir?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+        
+          
+          
+
+          
+           
+        
+        <script src="about.js"></script>
+    </body>
+</html>
